@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id='title' for='title'>Survey Form</h1>
+    <p id='description' for='description'>Please Help Us By Completing The Following Survey</p>
+
+    <form id='survey-form'>
+        <fieldset>
+            <label for='name' id="name-label">Name<input type='text' for='name' id='name' placeholder="Enter your name" required /></label>
+            <label for='email' id='email-label'>Email<input type='email' for='email' id='email' placeholder='Enter your email' required /></label>
+            <label for='age' id='number-label'>Age (optional)<input type="number" for='age' id='number' min="0" max="999" placeholder="Enter your age" required/></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">What is your favorite pizza chain?
+            <select id="dropdown" name="dropdown">
+                <option value="">(Select One)</option>
+                <option value="0">Domino's</option>
+                <option value="1">Pizza Hut</option>
+                <option value="2">Papa John's</option>
+                <option value="3">A Local Pizza Place</option>
+                <option value="4">I don't like pizza</option>
+            </select>
+            </label> 
+        </fieldset>
+        
+        <fieldset>
+            <label for="pineapple">Does Pineapple Belong On Pizza?
+            <label for="yesPineapple">
+                <input for="yesPienapple" name="pineapple" class="inline" id="yesPinapple" type="radio" value="yes" checked/>
+                Yes!
+            </label>
+            <label for="noPineapple">
+                <input for="noPineapple" name="pineapple" class="inline" id="noPineapple" type="radio" value="gross" />
+                Gross!
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="checkbox">What Toppings Do You Prefer?
+                <label for="checkbox">
+                    <input for="checkbox" class="inline" id="checkbox" type="checkbox" value="Plain Cheese" />
+                    Plain Cheese
+                </label>
+                <label for ='checkbox'>
+                    <input for="checkbox" class="inline" id="checkbox" type="checkbox" value="Pepperoni" />
+                    Pepperoni
+                </label>
+                <label for ='checkbox'>
+                    <input for="checkbox"  class="inline" id="checkbox" type="checkbox" value="Sausage" />
+                    Sausage
+                </label>
+                <label for ='checkbox'>
+                    <input for="checkbox"  class="inline" id="checkbox" type="checkbox" value="Mushrooms" />
+                    Mushrooms
+                </label>
+            </label>
+            <label for="other">Other Toppings:
+                <textarea id="other" name="other" rows="3" cols="30" placeholder="Other Toppings You Enjoy"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="submit" id="submit" />
+    </form>
+</body>
+</html>
